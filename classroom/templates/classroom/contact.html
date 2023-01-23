@@ -1,0 +1,12 @@
+<h1>Form View</h1>
+
+<form method="POST">
+  {% csrf_token %} {{form.as_p}}
+  <input type="submit" value="Submit" />
+</form>
+
+<ul>
+  <li>
+    <a href="{% url 'classroom:home' %}">Home Page</a>
+  </li>
+</ul>
